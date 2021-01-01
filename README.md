@@ -6,7 +6,7 @@ Constructing high-quality biomedical ontologies is one of the first  steps  to  
 
 ## Model flowchart
 
-HYPON takes an ontology graph as input. Each node on the graph is associated with avaried-size set of concept instances (e.g., patients). HYPON first split each node into subnodes according to the number ofconcept instances. It then performed a bidirectional message passing to aggregate information from parent nodes and childnodes separately. These subnodes are then merged together according to their embeddings in the Poincar ́e ball. Finally, HYPONpredicts new links in the hyperbolic space using merged embeddings.
+HYPON takes an ontology graph as input. Each node on the graph is associated with a varied-size set of concept instances (e.g., patients). HYPON first split each node into subnodes according to the number ofconcept instances. It then performed a bidirectional message passing to aggregate information from parent nodes and childnodes separately. These subnodes are then merged together according to their embeddings in the Poincare ball. Finally, HYPON predicts new links in the hyperbolic space using merged embeddings.
 
 ## Requirements
 conda env create -f environment.yml
