@@ -14,5 +14,6 @@ conda env create -f environment.yml
 ## Experiments
 1. _HYPON_ * CL (test AUROC = 0.88)
 ``` python train.py --task lp --dataset cl --model HYPON --lr 0.008 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.4 --weight-decay 0.0001 --manifold PoincareBall --log-freq 5 --cuda 0```
+
   _HGCN_ * CL (test AUROC = 0.77)
 ```python train.py --task lp --dataset cl --model HGCN --lr 0.008 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.4 --weight-decay 0.0001 --manifold PoincareBall --log-freq 5 --cuda 0```
