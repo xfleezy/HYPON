@@ -12,7 +12,7 @@ HYPON takes an ontology graph as input. Each node on the graph is associated wit
 conda env create -f environment.yml
 
 ## Experiments
-We give three examples of training commands used to train HYPON and HGCN for link prediction. Before experiments, data (can be downloaded [here](https://www.baidu.com/)) need to put in the folder ./data. In the examples below, we used a fixed random seed set to 1234 for fair comparisions.  
+We give three examples of training commands used to train HYPON and HGCN for link prediction. Before experiments, data (can be downloaded [here](https://drive.google.com/file/d/1VbRkvYHDgX45b0CgwkLT9XsgxuT-PyzB/view?usp=sharing)) need to put in the folder ./data. In the examples below, we used a fixed random seed set to 1234 for fair comparisions.  
 ### Link prediction on CL
 * HYPON (test_AUROC = 0.88)  
 ``` >>> python train.py --task lp --dataset cl --model HYPON --lr 0.008 --dim 16 --num-layers 2 --act relu --bias 1 --dropout 0.4 --weight-decay 0.0001 --manifold PoincareBall --log-freq 5 --cuda 0```   
